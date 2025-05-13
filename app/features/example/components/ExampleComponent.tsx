@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { useTranslation } from "react-i18next"
 
 export const ExampleComponentInner = styled.div`
   color: ${({ theme }) => {
@@ -9,5 +10,6 @@ export const ExampleComponentInner = styled.div`
 `
 
 export const ExampleComponent = () => {
-  return <ExampleComponentInner>ExampleComponent</ExampleComponentInner>
+  const { t } = useTranslation("example1")
+  return <ExampleComponentInner>{t("example")}</ExampleComponentInner>
 }

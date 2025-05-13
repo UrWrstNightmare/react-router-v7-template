@@ -6,4 +6,6 @@ const baseTheme = {
   fonts,
 }
 
+export type ThemeType = typeof baseTheme
+
 export default baseTheme
