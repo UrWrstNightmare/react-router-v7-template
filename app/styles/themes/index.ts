@@ -1,11 +1,14 @@
-import baseTheme, { type ThemeType } from "./_base"
+import { type ThemeType as _ThemeType } from "./_base"
 import darkTheme from "./dark"
+import lightTheme from "./light"
 
-export type ThemeKeys = "base" | "dark"
+export type ThemeKeys = "light" | "dark"
 
-const themes: Record<ThemeKeys, ThemeType> = {
-  base: baseTheme,
+const themes: Record<ThemeKeys, _ThemeType> = {
+  light: lightTheme,
   dark: darkTheme,
 }
+
+export type ThemeType = _ThemeType
 
 export default themes

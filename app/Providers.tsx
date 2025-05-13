@@ -12,17 +12,17 @@ export const SelectedThemeContext = React.createContext<{
   selectedTheme: ThemeKeysWithAuto
   setSelectedTheme: (theme: ThemeKeysWithAuto) => void
 }>({
-  selectedTheme: "base",
+  selectedTheme: "light",
   setSelectedTheme: () => {},
 })
 
 const Providers: React.FC<React.PropsWithChildren<{}>> = (props) => {
-  const [selectedTheme, setSelectedTheme] = React.useState<ThemeKeysWithAuto>("base")
+  const [selectedTheme, setSelectedTheme] = React.useState<ThemeKeysWithAuto>("light")
 
   const extractedTheme = React.useMemo(() => {
     if (selectedTheme === "auto") {
       return themes[
-        window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "base"
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"
       ]
     }
 

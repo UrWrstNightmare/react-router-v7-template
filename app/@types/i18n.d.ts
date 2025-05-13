@@ -1,6 +1,6 @@
 import "react-i18next"
 
-import type { I18nBase } from "@/i18n/_base"
+import type { I18nBase } from "@/i18n"
 
 declare module "react-i18next" {
   interface CustomTypeOptions {

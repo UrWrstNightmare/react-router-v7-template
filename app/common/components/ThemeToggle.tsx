@@ -10,7 +10,7 @@ const ThemeToggle = () => {
       value={selectedTheme}
       onChange={(e) => setSelectedTheme(e.target.value as ThemeKeysWithAuto)}
     >
-      <option value="base">Base</option>
+      <option value="light">Light</option>
       <option value="dark">Dark</option>
     </select>
   )
