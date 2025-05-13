@@ -2,6 +2,7 @@ import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 
 import { resources, namespaces } from "@/i18n"
+import { clientEnv } from "@/env"
 
 i18n
   // pass the i18n instance to react-i18next.
@@ -13,7 +14,7 @@ i18n
     ns: namespaces,
     defaultNS: namespaces[0],
     fallbackLng: "ko",
-    debug: process.env.NODE_ENV === "development",
+    debug: clientEnv.VITE_APP_LOG_LEVEL === "debug",
 
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
