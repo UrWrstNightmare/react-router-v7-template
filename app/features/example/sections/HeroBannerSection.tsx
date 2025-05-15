@@ -120,7 +120,7 @@ const CTAButton = styled.button`
   }
 `
 
-const HeroBanner = () => {
+const HeroBannerSection = () => {
   const { t } = useTranslation("example")
 
   return (
@@ -135,4 +135,4 @@ const HeroBanner = () => {
   )
 }
 
-export default HeroBanner
+export default HeroBannerSection

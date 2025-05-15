@@ -1,7 +1,7 @@
 import type { Route } from "./+types/route"
 import ExampleHeader from "@/common/components/ExampleHeader"
-import HeroBanner from "@/features/example/sections/HeroBanner"
-
+import HeroBannerSection from "@/features/example/sections/HeroBannerSection"
+import MenuSection from "@/features/example/sections/MenuSection"
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Example" },
@@ -13,7 +13,8 @@ export default function Page() {
   return (
     <>
       <ExampleHeader />
-      <HeroBanner />
+      <HeroBannerSection />
+      <MenuSection />
     </>
   )
 }

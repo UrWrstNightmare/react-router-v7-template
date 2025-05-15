@@ -9,4 +9,13 @@ export const exampleI18nEn: ExampleI18nBaseType = {
       "From single-origin beans to expertly crafted espresso, we bring you the finest coffee experience. Every cup tells a story of passion, tradition, and exceptional taste.",
     cta: "Explore Our Menu",
   },
+  hotCoffee: {
+    title: "Hot Coffee",
+  },
+  icedCoffee: {
+    title: "Iced Coffee",
+  },
+  menu: {
+    title: "Menu",
+  },
 }
