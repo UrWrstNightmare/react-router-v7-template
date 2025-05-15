@@ -1,9 +1,8 @@
-import type { I18nBase as _I18nBase } from "@/i18n/_base"
+import { i18nEn } from "./resources/en"
+import { i18nKo } from "./resources/ko"
+import { i18nBaseNamespaces, type I18nBase as _I18nBase } from "./resources/_base"
 
-import i18nKo from "./ko"
-import i18nEn from "./en"
-
-export const namespaces = ["example1", "example2"]
+export const namespaces = i18nBaseNamespaces
 
 export const resources = {
   ko: i18nKo,

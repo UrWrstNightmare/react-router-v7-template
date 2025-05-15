@@ -1,0 +1,12 @@
+import { exampleI18nBase, type ExampleI18nBaseType } from "./_base"
+
+export const exampleI18nEn: ExampleI18nBaseType = {
+  example: "Example Translation",
+  hero: {
+    title: "Discover Your Perfect Brew",
+    subtitle: "Artisanal Coffee Experience",
+    description:
+      "From single-origin beans to expertly crafted espresso, we bring you the finest coffee experience. Every cup tells a story of passion, tradition, and exceptional taste.",
+    cta: "Explore Our Menu",
+  },
+}

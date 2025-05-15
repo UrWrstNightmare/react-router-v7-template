@@ -1,3 +1,5 @@
+/// <reference types="vite-plugin-svgr/client" />
+
 // not important, as this will be handled by env.ts
 interface ImportMetaEnv {}
 

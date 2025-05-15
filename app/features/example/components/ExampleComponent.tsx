@@ -7,6 +7,6 @@ export const ExampleComponentInner = styled.div`
 `
 
 export const ExampleComponent = () => {
-  const { t } = useTranslation("example1")
+  const { t } = useTranslation("common")
   return <ExampleComponentInner>{t("example")}</ExampleComponentInner>
 }
