@@ -2,7 +2,7 @@ import React from "react"
 
 import { SelectedThemeContext, type ThemeKeysWithAuto } from "@/Providers"
 
-const ThemeToggle = () => {
+const ThemeToggle = () => { // 테마 변경 토글
   const { selectedTheme, setSelectedTheme } = React.useContext(SelectedThemeContext)
 
   return (

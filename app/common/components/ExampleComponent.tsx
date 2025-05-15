@@ -10,3 +10,4 @@ const ExampleComponent: React.FC<React.PropsWithChildren> = (props) => {
 }
 
 export default ExampleComponent
+// 테마를 사용하는 기본적인 예시 컴포넌트
