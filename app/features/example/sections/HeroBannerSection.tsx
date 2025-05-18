@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { useTranslation } from "react-i18next"
+import CoffeePreferenceSelect from "../components/CoffeePreferenceSelect"
 
 const HeroContainer = styled.section`
   background: ${({ theme }) => theme.colors.gradient.peach};
@@ -129,6 +130,7 @@ const HeroBannerSection = () => {
         <Title>{t("hero.title")}</Title>
         <Subtitle>{t("hero.subtitle")}</Subtitle>
         <Description>{t("hero.description")}</Description>
+        <CoffeePreferenceSelect />
         <CTAButton>{t("hero.cta")}</CTAButton>
       </ContentWrapper>
     </HeroContainer>

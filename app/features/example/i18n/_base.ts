@@ -16,6 +16,7 @@ export const exampleI18nBase = {
   menu: {
     title: "메뉴",
   },
+  coffeePreferenceSelectionPrompt: "선호하는 커피를 선택하세요",
 }
 
 export type ExampleI18nBaseType = typeof exampleI18nBase

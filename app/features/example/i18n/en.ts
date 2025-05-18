@@ -1,6 +1,7 @@
 import { exampleI18nBase, type ExampleI18nBaseType } from "./_base"
 
 export const exampleI18nEn: ExampleI18nBaseType = {
+  ...exampleI18nBase,
   example: "Example Translation",
   hero: {
     title: "Discover Your Perfect Brew",
@@ -18,4 +19,5 @@ export const exampleI18nEn: ExampleI18nBaseType = {
   menu: {
     title: "Menu",
   },
+  coffeePreferenceSelectionPrompt: "Select your coffee preference",
 }
