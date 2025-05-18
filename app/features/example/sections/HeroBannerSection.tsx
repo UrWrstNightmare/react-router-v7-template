@@ -1,6 +1,8 @@
 import React from "react"
+
 import styled from "@emotion/styled"
 import { useTranslation } from "react-i18next"
+
 import CoffeePreferenceSelect from "../components/CoffeePreferenceSelect"
 
 const HeroContainer = styled.section`

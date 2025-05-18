@@ -1,8 +1,8 @@
 import { AxiosError, type InternalAxiosRequestConfig } from "axios"
 import log from "loglevel"
 
-import logger from "@/utils/logger"
 import { clientEnv } from "@/env"
+import logger from "@/utils/logger"
 
 export const BASE_URL = clientEnv.VITE_APP_API_URL ?? ""
 

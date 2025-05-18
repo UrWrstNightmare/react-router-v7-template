@@ -1,11 +1,11 @@
 import React from "react"
 
 import { ThemeProvider } from "@emotion/react"
-import themes, { type ThemeKeys } from "@/styles/themes"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { I18nextProvider } from "react-i18next"
 
 import i18n from "@/libs/i18n"
-import { I18nextProvider } from "react-i18next"
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import themes, { type ThemeKeys } from "@/styles/themes"
 
 export type ThemeKeysWithAuto = ThemeKeys | "auto"
 
@@ -17,7 +17,7 @@ export const SelectedThemeContext = React.createContext<{
   setSelectedTheme: () => {},
 })
 
-const Providers: React.FC<React.PropsWithChildren<{}>> = (props) => {
+const Providers: React.FC<React.PropsWithChildren> = (props) => {
   const queryClient = new QueryClient()
 
   const [selectedTheme, setSelectedTheme] = React.useState<ThemeKeysWithAuto>("light")

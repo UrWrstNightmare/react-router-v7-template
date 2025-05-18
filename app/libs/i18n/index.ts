@@ -1,8 +1,8 @@
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 
-import { resources, namespaces } from "@/i18n"
 import { clientEnv } from "@/env"
+import { namespaces, resources } from "@/i18n"
 
 i18n
   // pass the i18n instance to react-i18next.

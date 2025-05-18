@@ -1,15 +1,16 @@
+import React from "react"
+
 import {
-  isRouteErrorResponse,
   Links,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
+  isRouteErrorResponse,
 } from "react-router"
 
-import Providers from "./Providers"
-
 import type { Route } from "./+types/root"
+import Providers from "./Providers"
 import "./globals.css"
 
 export const links: Route.LinksFunction = () => [

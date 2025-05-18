@@ -1,4 +1,5 @@
 import z from "zod"
+
 import stringToBoolean from "@/utils/stringToBoolean"
 
 const publicEnvSchema = z.object({

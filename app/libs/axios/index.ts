@@ -6,6 +6,7 @@ import { clientEnv } from "@/env"
 import tokenInterceptor from "./_axios/axiosAuthTokenInterceptor"
 import errorInterceptor from "./_axios/axiosErrorInterceptor"
 import mockInterceptor from "./_axios/axiosMockInterceptor"
+
 /**
  * @name axiosClient
  * @author Jiho Park
@@ -74,6 +75,7 @@ export const defineAxiosMock = (() => {
     }
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   return (_builder: (mock: MockAdapter) => void) => {}
 })()
 

@@ -1,6 +1,6 @@
+import { breakpoints } from "./variables/breakpoints"
 import { colors } from "./variables/colors"
 import { fonts } from "./variables/fonts"
-import { breakpoints } from "./variables/breakpoints"
 
 const baseTheme = {
   colors,

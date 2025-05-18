@@ -1,5 +1,6 @@
-import { clientEnv } from "@/env"
 import logger from "loglevel"
+
+import { clientEnv } from "@/env"
 
 const initialize = () => {
   switch (clientEnv.VITE_APP_LOG_LEVEL) {

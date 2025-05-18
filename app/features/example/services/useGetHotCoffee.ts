@@ -1,11 +1,11 @@
 import { useQuery } from "@tanstack/react-query"
+import { z } from "zod"
 
 import { axiosClient, defineAxiosMock } from "@/libs/axios"
-import { z } from "zod"
 
 const API_URL = "https://api.sampleapis.com/coffee/hot"
 
-const ApiResponseBody = z.array(
+const apiResponseBody = z.array(
   z.object({
     title: z.string(),
     description: z.string(),
@@ -15,7 +15,7 @@ const ApiResponseBody = z.array(
   }),
 )
 
-type ApiResponseBodyType = z.infer<typeof ApiResponseBody>
+type ApiResponseBodyType = z.infer<typeof apiResponseBody>
 
 const ApiResponseMockData: ApiResponseBodyType = [
   {
@@ -34,8 +34,8 @@ export const useGetHotCoffee = () =>
     queryFn: async (): Promise<ApiResponseBodyType> => {
       const { data } = await axiosClient.get(API_URL, {})
 
-      // return apiClb002.responseBodyMap[200].parse(data);
-      return data
+      const parsedData = apiResponseBody.parse(data)
+      return parsedData
     },
   })
 

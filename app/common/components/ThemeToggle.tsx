@@ -1,7 +1,8 @@
 import React from "react"
 
-import { SelectedThemeContext, type ThemeKeysWithAuto } from "@/Providers"
 import { useTranslation } from "react-i18next"
+
+import { SelectedThemeContext, type ThemeKeysWithAuto } from "@/Providers"
 
 const ThemeToggle = () => {
   const { selectedTheme, setSelectedTheme } = React.useContext(SelectedThemeContext)
